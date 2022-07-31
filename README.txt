@@ -2,6 +2,15 @@ Aerial by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
+### Change Mode of website (Light or Dark)
+
+#### Dark Mode
+	rename /personal_website/assets/css/main.css to main_light.css
+	rename /personal_website/assets/css/main_dark.css to main.css
+
+#### Light Mode
+	rename /personal_website/assets/css/main.css to main_dark.css
+	rename /personal_website/assets/css/main_light.css to main.css
 
 This is Aerial, a single page, single screen responsive site template. Real simple.
 Makes heavy use of CSS animation (something I've been messing with a lot lately).
