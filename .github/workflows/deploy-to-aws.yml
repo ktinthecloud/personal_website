@@ -47,7 +47,7 @@ jobs:
 #           DEBUG: 1
           
       - name: AWS Cloudfront Invalidate
-        uses: awact/cloudfront-action@v0.1.2
+        uses: awact/cloudfront-action@master
         env:
           SOURCE_PATH: './*'
           AWS_REGION: 'us-west-1'
