@@ -37,7 +37,7 @@ jobs:
           #SOURCE_DIR: 'public'      # optional: defaults to entire repository
           
       - name: Invalidate Cloudfront
-        uses: chetan/invalidate-cloudfront-action@v2.4
+        uses: chetan/invalidate-cloudfront-action@v2
         env:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
           PATHS: '/*'
