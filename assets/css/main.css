@@ -1009,7 +1009,9 @@ input, select, textarea {
 		}
 
 		#header p {
-			font-size: 1em;
+			font-size: clamp(0.55rem, 3.1vw, 1em);
+			letter-spacing: 0.15em;
+			white-space: nowrap;
 		}
 
 		#header nav {
