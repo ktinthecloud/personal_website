@@ -574,6 +574,7 @@ input, select, textarea {
 			line-height: 1em;
 			color: var(--text);
 			text-shadow: 0 2px 24px rgba(0,0,0,0.55), 0 0 32px rgba(34,211,238,0.22);
+			animation: fly-up 1s 2.25s both;
 		}
 
 		#header p {
@@ -609,14 +610,14 @@ input, select, textarea {
 				background-size: 300% 100%;
 				background-repeat: no-repeat;
 				background-position: 100% 0;
-				animation: line-sweep 3s 3.6s ease-in-out both;
+				animation: line-sweep 4.2s 3.6s ease-in-out both;
 			}
 
 			/* Tagline phrases pop in one after another, after the icons */
 			#header p span {
 				display: inline-block;
 				opacity: 0;
-				animation: nav-icons 1s ease-in-out both;
+				animation: fly-in-bottom 1s ease-out both;
 			}
 
 				#header p .r1 { animation-delay: 3.7s; }
@@ -631,6 +632,16 @@ input, select, textarea {
 		@keyframes line-sweep {
 			0%   { background-position: 100% 0; }
 			100% { background-position: 0% 0; }
+		}
+
+		@keyframes fly-in-bottom {
+			0%   { opacity: 0; transform: translate3d(0, 2.5em, 0); }
+			100% { opacity: 1; transform: translate3d(0, 0, 0); }
+		}
+
+		@keyframes fly-up {
+			0%   { transform: translate3d(0, 1.5em, 0); }
+			100% { transform: translate3d(0, 0, 0); }
 		}
 
 		#header nav {
@@ -1165,6 +1176,7 @@ input, select, textarea {
 
 		#overlay,
 		#header,
+		#header h1,
 		#header nav li,
 		#header p span {
 			animation: none !important;
